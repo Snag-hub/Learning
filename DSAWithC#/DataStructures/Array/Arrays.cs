@@ -11,8 +11,10 @@ namespace DSAWithC_.DataStructures
     {
         public void RunAll()
         {
-            int[] arr = [1, 3, 5, 6, 5, 3, 2];
+            int[] arr = [0, 3, 5, 0, 5, 3, 2];
             ReverseAnArray.ReverseArray(arr);
+            LargeAnd2Large.LargeAnd2ndLarge(arr);
+            MoveAllZero.MoveAllZeroToEnd(arr);
         }
     }
 }

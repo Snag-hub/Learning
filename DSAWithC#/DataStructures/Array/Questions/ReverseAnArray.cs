@@ -15,7 +15,7 @@ public static class ReverseAnArray
             return;
         }
 
-        Console.WriteLine(string.Join(',', arr));
+        // Console.WriteLine(string.Join(',', arr));
 
         // todo: loop all elements and with two pointer technique.
         int left = 0;
@@ -30,6 +30,6 @@ public static class ReverseAnArray
             right--;
         }
 
-        Console.WriteLine(string.Join(',', arr));
+        Console.WriteLine($"Reverse Array: {string.Join(',', arr)}");
     }
 }
