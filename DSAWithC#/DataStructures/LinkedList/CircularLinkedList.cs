@@ -10,7 +10,11 @@ namespace DSAWithC_.DataStructures.LinkedList
         public int Data;
         public CNode Next;
 
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
+#pragma warning disable IDE0290 // Use primary constructor
         public CNode(int data)
+#pragma warning restore IDE0290 // Use primary constructor
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
         {
             Data = data;
             Next = null;
@@ -19,7 +23,9 @@ namespace DSAWithC_.DataStructures.LinkedList
 
     public class CircularLinkedList
     {
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
         private CNode head;
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
 
         public void InsertEnd(int data)
         {

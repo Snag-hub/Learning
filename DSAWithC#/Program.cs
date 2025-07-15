@@ -2,6 +2,7 @@
 using DSAWithC_.DataStructures.LinkedList;
 using DSAWithC_.DataStructures.Queue;
 using DSAWithC_.DataStructures.Stack;
+using DSAWithC_.DataStructures.Tree;
 
 Console.WriteLine("Hello, World!");
 
@@ -11,8 +12,10 @@ Console.WriteLine("Hello, World!");
 // Queues queues = new Queues();
 // queues.RunAll();
 
-LinkedList linkedList = new();
-linkedList.RunAll();
+// LinkedList linkedList = new();
+// linkedList.RunAll();
 
+Trees trees = new();
+trees.RunAll();
 
 // Console.ReadKey();
