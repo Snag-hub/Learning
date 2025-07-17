@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 
 namespace DSAWithC_.DataStructures.Tree.Question
@@ -54,6 +55,57 @@ namespace DSAWithC_.DataStructures.Tree.Question
             var RightH = Height(root.Right);
 
             return 1 + Math.Max(LeftH, RightH);
+        }
+
+        public static int CountLeaf(TreeNode root)
+        {
+            if (root == null)
+            {
+                return 0;
+            }
+
+            // Leaf node condition
+            if (root.Left == null && root.Right == null)
+            {
+                return 1;
+            }
+
+            // Recurse on both sides
+            return CountLeaf(root.Left) + CountLeaf(root.Right);
+        }
+
+        public static int CountNodes(TreeNode root)
+        {
+            if (root == null)
+            {
+                return 0;
+            }
+
+            return 1 + CountNodes(root.Left) + CountNodes(root.Right);
+        }
+
+        public static int TreeNodeSum(TreeNode root)
+        {
+            if (root == null)
+            {
+                return 0;
+            }
+
+            return root.Data + TreeNodeSum(root.Left) + TreeNodeSum(root.Right);
+        }
+
+        public static bool AreIdentical(TreeNode root1, TreeNode root2)
+        {
+            if (root1 == null && root2 == null)
+            {
+                return true;
+            }
+            if (root1 == null || root2 == null)
+            {
+                return false;
+            }
+
+            return AreIdentical(root1.Left, root2.Left) && AreIdentical(root1.Right, root2.Right);
         }
     }
 
