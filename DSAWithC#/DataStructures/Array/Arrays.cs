@@ -15,6 +15,7 @@ namespace DSAWithC_.DataStructures
             ReverseAnArray.ReverseArray(arr);
             LargeAnd2Large.LargeAnd2ndLarge(arr);
             MoveAllZero.MoveAllZeroToEnd(arr);
+            RelativeSorting.Run();
         }
     }
 }

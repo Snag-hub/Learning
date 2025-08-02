@@ -6,8 +6,7 @@ using DSAWithC_.DataStructures.Tree;
 
 Console.WriteLine("Hello, World!");
 
-// Arrays a = new();
-// a.RunAll();
+RelativeSorting.Run();
 // Stacks.RunAll();
 // Queues queues = new Queues();
 // queues.RunAll();
@@ -15,7 +14,7 @@ Console.WriteLine("Hello, World!");
 // LinkedList linkedList = new();
 // linkedList.RunAll();
 
-Trees trees = new();
-trees.RunAll();
+// Trees trees = new();
+// trees.RunAll();
 
 // Console.ReadKey();
